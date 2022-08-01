@@ -1,0 +1,57 @@
+/*https://dev.to/jungjungie/create-a-navbar-with-css-flexbox-2leh*/
+
+*{
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    /*justify-content: flex-end;*/
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3F37C9;
+    margin: 0;
+    padding: 0 15px;
+    color: #FAFAFA;
+    /*box-shadow: 0 1px 8px #ddd;*/
+}
+
+#nav-title {
+    margin-right: auto;
+    font-size: 2rem;
+}
+
+#phrase-effect {
+    margin-right: auto;
+    font-family: 'Square Peg', cursive;
+    font-size: 2rem;
+    background-color: #3F37C9;
+}
+
+header ul {
+    padding: 2rem;
+    background-color: #3F37C9;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #3F37C9;
+    font-size: 1.5rem;
+}
+
+header a {
+    background-color: #3F37C9;
+    text-decoration: none;
+    color: #FAFAFA;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #4CC9F0;
+}
