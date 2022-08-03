@@ -1,24 +1,57 @@
 /*https://dev.to/jungjungie/create-a-navbar-with-css-flexbox-2leh*/
+/*https://coolors.co/palette/d8f3dc-b7e4c7-95d5b2-74c69d-52b788-40916c-2d6a4f-1b4332-081c15*/
 
-*{
+
+/*****************VAR*******************/
+:root {
+    --ff-primary: "sans-serif";
+
+    --clr-primary: #2d6a4f;
+    /*2d6a4f*/
+    --clr-second: #b7e4c7;
+    --clr-white: #F8f8f8;
+    /*F5f5f5*/
+}
+
+/***************************************/
+
+
+/*****************GLOBAL*****************/
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    background-color: #FAFAFA;
+    /*background-color: #FAFAFA;*/
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
 
-header{
+/***************************************/
+
+
+
+/*****************HEADER*****************/
+header {
     display: flex;
     /*justify-content: flex-end;*/
     justify-content: space-between;
     align-items: center;
-    background-color: #3F37C9;
+    background-color: var(--clr-primary);
+    /*background-color: #3F37C9;*/
     margin: 0;
     padding: 0 15px;
-    color: #FAFAFA;
+
     /*box-shadow: 0 1px 8px #ddd;*/
 }
+
+main {
+    display: flex;
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+}
+
 
 #nav-title {
     margin-right: auto;
@@ -29,29 +62,30 @@ header{
     margin-right: auto;
     font-family: 'Square Peg', cursive;
     font-size: 2rem;
-    background-color: #3F37C9;
+    color: var(--clr-white);
+
 }
 
 header ul {
     padding: 2rem;
-    background-color: #3F37C9;
 }
 
 header li {
     list-style: none;
-    display: inline-block;
+    display: inline;
     padding: 0 20px;
-    background-color: #3F37C9;
     font-size: 1.5rem;
 }
 
 header a {
-    background-color: #3F37C9;
     text-decoration: none;
     color: #FAFAFA;
     transition: all 0.3s ease 0s;
 }
 
 header a:hover {
-    color: #4CC9F0;
+    color: var(--clr-second);
+    /*color: #4CC9F0;*/
 }
+
+/***************************************/
