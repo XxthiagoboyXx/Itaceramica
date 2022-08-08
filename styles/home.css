@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
-
+@import url(/styles/global.css);
 /*https://coolors.co/palette/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0*/
+
+* {
+    font-family: var(--ff-primary)
+}
 
 main {
     display: flex;
@@ -10,6 +13,15 @@ main {
     padding: 10%;
 }
 
+p {
+    color: var(--clr-primary);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cat-prod {
+    font-size: 2.5rem;
+}
 
 .container-products {
     display: flex;
@@ -19,8 +31,41 @@ main {
     background-color: wheat;
 }
 
+img {
+    border-radius: 5%;
+}
+
+
 .products {
-    margin-right: 10%;
-    margin-top: 10%;
+    margin-right: 5%;
+    /*10% ?*/
+    margin-top: 2%;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    overflow: hidden;
+
+}
+
+.products:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+
+.product-price {
+    background-color: var(--clr-primary);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--clr-white);
+    border-radius: 5%;
+}
+
+a:hover,
+a:active,
+a:link,
+a:visited {
     text-decoration: none;
 }

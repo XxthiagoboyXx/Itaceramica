@@ -1,10 +1,13 @@
 /*https://dev.to/jungjungie/create-a-navbar-with-css-flexbox-2leh*/
 /*https://coolors.co/palette/d8f3dc-b7e4c7-95d5b2-74c69d-52b788-40916c-2d6a4f-1b4332-081c15*/
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 /*****************VAR*******************/
 :root {
-    --ff-primary: "sans-serif";
+    --ff-primary: "Poppins";
 
     --clr-primary: #2d6a4f;
     /*2d6a4f*/
@@ -24,7 +27,7 @@
     /*background-color: #FAFAFA;*/
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: var(--ff-primary);
 }
 
 /***************************************/
@@ -32,6 +35,14 @@
 
 
 /*****************HEADER*****************/
+
+@media (max-width: 800px) {
+    #phrase-effect {
+        visibility: hidden;
+    }
+
+}
+
 header {
     display: flex;
     /*justify-content: flex-end;*/
@@ -41,6 +52,7 @@ header {
     /*background-color: #3F37C9;*/
     margin: 0;
     padding: 0 15px;
+
 
     /*box-shadow: 0 1px 8px #ddd;*/
 }
@@ -56,6 +68,7 @@ main {
 #nav-title {
     margin-right: auto;
     font-size: 2rem;
+    color: var(--clr-white);
 }
 
 #phrase-effect {
@@ -94,6 +107,22 @@ header a:hover {
 
 
 /*****************FOOTER*****************/
+footer {
+    font-size: 2rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    text-align: center;
+    align-content: flex-end;
+    align-items: flex-end;
+    height: 3rem;
+}
 
+/***************************************/
+
+
+/*****************MIS******************/
+hr {
+    border-radius: 50%;
+}
 
 /***************************************/
