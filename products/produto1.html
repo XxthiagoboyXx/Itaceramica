@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itacerâmica - Produto 1 -</title>
+    <link href="/styles/produto.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Itacerâmica</h1>
-        <p>Te ajudando a construir seus sonhos</p>
-        <hr>
+        <h1 id="nav-title"><a href="/"> Itacerâmica</a></h1>
+        <p id="phrase-effect">Te ajudando a construir seus sonhos</p>
         <nav>
             <ul>
                 <li> <a href="/index.html">Home</a></li>
@@ -20,7 +20,7 @@
             </ul>
         </nav>
     </header>
-    <hr>
+
     <main>
         <div>
             <h2>Piso Azul</h2>
@@ -36,14 +36,12 @@
                 <input id="l_cpf" type="text" maxlength="8" placeholder="Digite o CEP">
                 <button type="button">OK</button>
                 <br><br>
-                <input type="submit" value="Comprar">
+                <input class="btn-comprar" type="submit" value="Comprar">
             </form>
         </div>
         <hr>
         <div name="descricao">
-            <center>
-                <h3>Descrição</h3>
-            </center>
+            <h3>Descrição</h3>
             <p>Piso Cor Azul, qualidade impecável.</p>
         </div>
     </main>

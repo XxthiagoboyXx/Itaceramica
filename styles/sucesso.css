@@ -1,0 +1,11 @@
+@import url(/styles/global.css);
+
+* {
+    font-family: var(--ff-primary)
+}
+
+body {
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+}

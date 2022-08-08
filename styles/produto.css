@@ -1,0 +1,64 @@
+@import url(/styles/global.css);
+
+
+* {
+    font-family: var(--ff-primary)
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    color: var();
+    font-weight: 500;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    padding: 2%;
+}
+
+.btn-comprar {
+    cursor: pointer;
+    width: 20%;
+    margin-top: 3rem;
+    border: 0;
+    border-radius: 32px;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    font-weight: 1000;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    min-width: 200px;
+    margin-bottom: 17%;
+    margin-left: 35%;
+}
+
+.btn-comprar:hover {
+    color: var(--clr-second);
+}
+
+h2 {
+    color: var(--clr-primary);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+
+    margin-left: 150%;
+    color: var(--clr-primary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    flex-direction: flex-start;
+}
+
+p {
+    margin-left: 20px;
+}
+
+hr {
+    margin-left: 2%;
+    margin-right: 2%;
+}
