@@ -1,0 +1,11 @@
+@media (max-width: 780px) {
+    hr {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 578px) {
+    hr {
+        visibility: visible;
+    }
+}

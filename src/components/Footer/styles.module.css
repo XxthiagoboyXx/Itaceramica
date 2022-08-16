@@ -1,0 +1,38 @@
+img {
+    border-radius: 5%;
+}
+
+
+.products {
+    margin-right: 5%;
+    /*10% ?*/
+    margin-top: 2%;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    overflow: hidden;
+
+}
+
+.products:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+
+.product-price {
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5%;
+}
+
+a:hover,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+}
